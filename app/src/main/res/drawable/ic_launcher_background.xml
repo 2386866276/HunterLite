@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    HunterLite 自适应图标 - 背景层 (ic_launcher_background.xml)
+
+    设计思路：
+    - 主体是深邃的墨绿黑径向渐变，中心微微透亮，边缘沉入近黑色，
+      呼应"暗夜猎手/终端扫描"的氛围，而不是常见的纯色块或简单渐变条。
+    - 叠加两圈同心细环，模拟雷达扫描的探测波纹，强化"检测"主题。
+    - 四角各放一个取景器/相机对焦括号(L形角标)，呼应"Hunter"的瞄准/
+      锁定意象，同时视觉上把画面往外撑开，避免中心区域拥挤，给前景图标
+      留出干净的呼吸空间。
+    - 配色克制：只用一种色相(青绿)做明暗层次，不额外引入第二色相，
+      保证和系统里已经在用的 primary 强调色能自然衔接。
+
+    使用方式：放入 res/drawable/ic_launcher_background.xml，
+    配合 res/mipmap-anydpi-v26/ic_launcher.xml 中的
+    <background android:drawable="@drawable/ic_launcher_background" /> 引用。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 底色：径向渐变，中心墨绿透亮 -> 边缘近黑，营造纵深感 -->
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="54"
+                android:centerY="54"
+                android:gradientRadius="76"
+                android:startColor="#1B4F46"
+                android:centerColor="#0E2420"
+                android:endColor="#060F0D" />
+        </aapt:attr>
+    </path>
+
+    <!-- 雷达扫描环：外环，极淡 -->
+    <path
+        android:pathData="M54,10 A44,44 0 1,1 53.99,10 Z"
+        android:fillColor="#00000000"
+        android:strokeColor="#2BD9A0"
+        android:strokeWidth="0.6"
+        android:strokeAlpha="0.16" />
+
+    <!-- 雷达扫描环：内环，稍明显一点 -->
+    <path
+        android:pathData="M54,22 A32,32 0 1,1 53.99,22 Z"
+        android:fillColor="#00000000"
+        android:strokeColor="#2BD9A0"
+        android:strokeWidth="0.8"
+        android:strokeAlpha="0.22" />
+
+    <!-- 中心柔光核心，弱化边界，避免和前景图标"打架" -->
+    <path android:pathData="M54,38 A16,16 0 1,1 53.99,38 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="54"
+                android:centerY="54"
+                android:gradientRadius="16"
+                android:startColor="#3FE8B0"
+                android:endColor="#00000000" />
+        </aapt:attr>
+    </path>
+
+    <!-- 四角取景器角标：左上 -->
+    <path
+        android:pathData="M14,32 L14,16 L30,16"
+        android:fillColor="#00000000"
+        android:strokeColor="#2BD9A0"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.55" />
+
+    <!-- 右上 -->
+    <path
+        android:pathData="M78,16 L94,16 L94,32"
+        android:fillColor="#00000000"
+        android:strokeColor="#2BD9A0"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.55" />
+
+    <!-- 左下 -->
+    <path
+        android:pathData="M14,76 L14,92 L30,92"
+        android:fillColor="#00000000"
+        android:strokeColor="#2BD9A0"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.55" />
+
+    <!-- 右下 -->
+    <path
+        android:pathData="M78,92 L94,92 L94,76"
+        android:fillColor="#00000000"
+        android:strokeColor="#2BD9A0"
+        android:strokeWidth="2.4"
+        android:strokeLineCap="round"
+        android:strokeAlpha="0.55" />
+
+</vector>

@@ -1,0 +1,4 @@
+<resources>
+    <!-- 将应用名称集中管理 -->
+    <string name="app_name">HunterLite</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+      1. 必须使用 NoActionBar，否则系统自带的标题栏会和 Compose 的 TopAppBar 冲突。
+      2. 使用原生 Material 主题，避免引入额外的 XML Material 依赖导致包体积变大。
+    -->
+    <style name="Theme.HunterLite" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- 启动时的 Window 背景色 (浅色模式)，尽量贴近 Compose 的 bg100，防止启动闪白屏 -->
+        <item name="android:windowBackground">#FFF5F7F6</item>
+        <!-- 状态栏和导航栏透明，交给 Compose 的 enableEdgeToEdge() 处理 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- 取消默认的启动过渡动画，让 Compose 瞬间接管 -->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>

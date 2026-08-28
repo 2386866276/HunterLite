@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.HunterLite" parent="android:Theme.Material.NoActionBar">
+        <!-- 深色模式下的 Window 背景色，贴近 Compose 的深色 bg100 -->
+        <item name="android:windowBackground">#FF1E2329</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
