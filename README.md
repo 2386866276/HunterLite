@@ -1,21 +1,23 @@
 # HunterLite
 
-轻量级 Android 应用。
+Android Root 检测与设备安全状态扫描工具。
 
-A lightweight Android application.
+An Android root detection and device security scanner.
 
 ## 简介 | Introduction
 
-HunterLite 是一个轻量级 Android 应用，支持多语言界面、亮色与深色主题以及设备状态检测。
+HunterLite 是一款 Android Root 检测与设备安全状态扫描工具，支持 Root 状态检测与风险评估、设备信息收集、安全密钥状态检测、多语言界面以及亮色与深色主题。
 
-HunterLite is a lightweight Android application with support for multilingual interface, light and dark themes, and device status detection.
+HunterLite is an Android root detection and device security scanner with root status detection and risk assessment, device info collection, security key status checking, multilingual UI, and light and dark themes.
 
 ## 功能 | Features
 
+- Root 状态检测与风险评估 | Root status detection and risk assessment
+- 设备信息收集 | Device info collection
+- 安全密钥状态检测 | Security key status checking
+- 远程校验服务 | Remote verification service
 - 多语言界面支持 | Multilingual interface support
 - 亮色与深色主题 | Light and dark themes
-- 设备状态检测 | Device status detection
-- 远程校验服务 | Remote verification service
 
 ## 下载 | Download
 
